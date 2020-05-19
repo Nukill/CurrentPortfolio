@@ -28,6 +28,7 @@ $(window).scroll(function () {
     if($(window).scrollTop() >= 50){
         $('.nav').css({"position": "fixed", "background-color": "rgba(0, 0, 0, 1)", "z-index": "99", "width": "100%"});
         $('.nav-mobile').css({"position": "fixed", "z-index": "99"});
+        
     
     }
     else{
@@ -86,10 +87,12 @@ $click = 0;
 $('.nav-mobile').click(function(){
     if($click == 0){
         $('.swipe-menu').addClass('swipe-menu-anim');
+        $('.nav-mobile ul .titleName').text('Zwiń menu <');
         $click = 1;
     }
     else{
         $('.swipe-menu').removeClass('swipe-menu-anim');
+        $('.nav-mobile ul .titleName').text('Rozwiń menu >');
         $click = 0;
     }
 })
