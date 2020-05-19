@@ -135,7 +135,6 @@ body{
     .first-element{
         position: relative;
         .attachElement2{
-            position: absolute;
             z-index: 0;
             width: 30%;
             height: 80%;
@@ -147,9 +146,7 @@ body{
     .second-element{
         position: relative;
         .attachElement{
-            position: absolute;
             z-index: 5;
-            margin: 0 0 auto;
             width: 23%;
             height: 32%;
             visibility: none;
@@ -188,6 +185,7 @@ body{
     left: 35.7%;
     top: 10%;
     visibility: visible;
+    position: absolute;
 }
 
 .onScrollAnimMc{
@@ -197,15 +195,16 @@ body{
     bottom: 0;
     visibility: visible;
     z-index: 15;
+    position: absolute;
 }
 
 @keyframes moveHead{
-    from{left: 35.7%; top: -150px}
+    from{left: 25.7%; top: 10%}
     to{left: 35.7%; top: 10%}
 }
 
 @keyframes moveBody{
-    from{left: 0%;}
+    from{left: 20%;}
     to{left: 40.5%;}
 }
 

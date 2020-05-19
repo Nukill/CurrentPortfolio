@@ -180,7 +180,6 @@ body {
 }
 
 .wrapper .first-element .attachElement2 {
-  position: absolute;
   z-index: 0;
   width: 30%;
   height: 80%;
@@ -194,9 +193,7 @@ body {
 }
 
 .wrapper .second-element .attachElement {
-  position: absolute;
   z-index: 5;
-  margin: 0 0 auto;
   width: 23%;
   height: 32%;
   visibility: none;
@@ -248,6 +245,7 @@ body {
   left: 35.7%;
   top: 10%;
   visibility: visible;
+  position: absolute;
 }
 
 .onScrollAnimMc {
@@ -257,12 +255,13 @@ body {
   bottom: 0;
   visibility: visible;
   z-index: 15;
+  position: absolute;
 }
 
 @-webkit-keyframes moveHead {
   from {
-    left: 35.7%;
-    top: -150px;
+    left: 25.7%;
+    top: 10%;
   }
   to {
     left: 35.7%;
@@ -272,8 +271,8 @@ body {
 
 @keyframes moveHead {
   from {
-    left: 35.7%;
-    top: -150px;
+    left: 25.7%;
+    top: 10%;
   }
   to {
     left: 35.7%;
@@ -283,7 +282,7 @@ body {
 
 @-webkit-keyframes moveBody {
   from {
-    left: 0%;
+    left: 20%;
   }
   to {
     left: 40.5%;
@@ -292,7 +291,7 @@ body {
 
 @keyframes moveBody {
   from {
-    left: 0%;
+    left: 20%;
   }
   to {
     left: 40.5%;
